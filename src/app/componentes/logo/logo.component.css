@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 130px;
+}
+
+.logo img {
+  transition: 1s ease;
+}
+
+.logo img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+img {
+  width: 40px;
+}
+
+.red {
+  padding: 5px;
+  width: 55px;
+}
+
+.red:hover{
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 10px 10px #1eec28;
+  -webkit-box-shadow: 0px 0px 10px 10px #1eec28;
+  }
+
+.btn {
+  border-width: medium;
+}
+
+button {
+  padding: 13px 30px;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #1e1e1e;
+  color: greenyellow;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+}
+
+button:hover {
+  animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.7, 1.3);
+  }
+
+  25% {
+    transform: scale(1.3, 0.7);
+  }
+
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+
+  75% {
+    transform: scale(1.3, 0.7);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media (max-width : 576px){
+  .redes img{
+    width: 15%;
+  }
+}

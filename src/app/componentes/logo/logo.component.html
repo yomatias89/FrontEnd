@@ -1,0 +1,17 @@
+
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src=".. /../../assets/APLogo.png" id="logo">
+        </div>
+        <div class="redes">
+         
+                <a href="https://www.facebook.com/mateo.nerli"><img src="../../../assets/facebook.png" class="red" alt=""></a>
+                <a href="https://www.instagram.com/mateo.nerli/"><img src="../../../assets/instagram.png" class="red" alt=""></a>
+                <a href="https://github.com/MateoNerli"><img src="../../../assets/github.png" class="red" alt=""></a>
+                <a href="https://www.linkedin.com/in/mateo-nerli-39661a270/"><img src="../../../assets/linkedin.png" class="red" alt=""></a>
+                <button type="button" class=" boton btn btn-outline-light"(click)="login()" *ngIf="!isLogged" >Ingreso</button>
+                <button type="button" class=" boton btn btn-outline-light"(click)="onLogOut()" *ngIf="isLogged" >Cerrar sesion</button>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.row{
+    padding: 15px;
+    background-color: #e7b483;
+}
+.contenedor{
+    width: auto;
+}
+.parte1,.parte2{
+    display: inline;
+    text-align: center;
+}
+.img-proyecto{
+    box-shadow: 10px 10px 30px #000000;
+}
+h1{
+    text-align: center;
+}
+.accordion-button {
+    background-color: #31acfd;
+    color: rgb(0, 0, 0);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #000000;
+    background: none;
+    box-shadow: none;
+}

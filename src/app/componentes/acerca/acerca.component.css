@@ -1,0 +1,50 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    background-color: #e7b483;
+    text-align: center;
+}
+
+.mia img {
+    transition: .5s ease;
+}
+
+.mia img:hover {
+    box-shadow: 0 0 0 10px #000000;
+    transition: .5s ease;
+}
+
+@media (min-width : 600px){
+    #foto{
+        position: absolute;
+        width:100%;
+        border-radius: 25%;
+        margin-top: -50%;        
+    }
+    #texto{
+        font-weight: bold;
+        margin-top: 11%;
+        position: relative; 
+        left: -9%;
+    }
+    #info{
+        margin-top: 3%;
+    }
+}
+@media (max-width: 599px) {
+    #foto {
+        position: absolute;
+        width: 50%;
+        border-radius: 25%;
+        box-shadow: 3px 3px 3px gray;
+        left: 25%;
+        top: -55px;
+    }
+
+    #texto {
+        font-weight: bold;
+        margin-top: 50%;
+    }
+}

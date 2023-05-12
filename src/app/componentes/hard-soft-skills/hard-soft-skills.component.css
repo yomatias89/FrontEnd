@@ -1,0 +1,18 @@
+.row{
+    background-color: #e7b483;
+    padding: 15px;
+    text-align: center;
+}
+.cir{
+   text-align: center;
+}
+
+.accordion-button {
+    background-color: #31acfd;
+    color: rgb(0, 0, 0);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #000000;
+    background: none;
+    box-shadow: none;
+}

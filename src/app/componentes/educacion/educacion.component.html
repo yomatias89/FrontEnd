@@ -1,0 +1,87 @@
+<div class="row">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" class="col-md-6 mx-auto">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    <h1 id="codigo1"><u>Educacion</u></h1>
+                </button>
+            </h2>
+        </div>
+    </div>
+    <div id="panelsStayOpen-collapseTwo" class="panel-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+            <div class="col-lg2">
+                <button type="button" class="agregar" routerLink="/nuevaexp" *ngIf="isLogged">
+                    AGREGAR <br>EDUCACION
+                </button>
+                <div class="col-lg-10">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let educacion of educacion">
+                                <td>
+                                    <h3> {{educacion.nombreE}}</h3>
+                                </td>
+                                <td>
+                                    <p>{{educacion.descripcionE}}</p>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-dark" routerLink="/editedu/{{educacion.id}}">
+                                        <i class="bi bi-pencil-square"></i> EDITAR</button>
+                                </td>
+
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="borrar(educacion.id)">
+                                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li>
+                            <h2>Primaria</h2>
+                            <h4>(2008-2014)</h4>
+                            <img src="../../../assets/logo pompeya.png" alt="">
+                            <p>EL nivel primario lo realize en el Instituto Nuestra Señora de Pompeya</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Secundaria</h2>
+                            <h4>(2015-2020)</h4>
+                            <img src="../../../assets/logo-Misericordia.png" alt="">
+                            <p>EL nivel seundario lo realize en el Instituto Nuestra Señora de la
+                                Misericordia</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Terciario</h2>
+                            <h4>(2022-Actualmente)</h4>
+                            <img src="../../../assets/UTN_logo.jpg" alt="">
+                            <p>Me encuentro hoy en dia cursando la tecnicatura superior en Programación en
+                                la utn
+                                San Nicolas </p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Cursos</h2>
+                            <h4>(2022-Actualmente)</h4>
+                            <br><img src="../../../assets/animate a programar.png" alt="">
+                            <p>Realize el curso animate a programar, que se trataba de una introduccion a
+                                html,css y
+                                un poco de java
+                                script, en el cual consegui terminar el curso y conseguir el diploma.</p>
+                            <br><img src="../../../assets/arge prog.jpg" alt="" srcset="">
+                            <p>Me encuentro realizando el curso de Argentina programa </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

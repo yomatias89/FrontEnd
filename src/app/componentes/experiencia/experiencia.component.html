@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" class="col-md-6 mx-auto">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <h1 id="codigo1"><u>Experiencia laboral</u></h1>
+                </button>
+            </h2>
+        </div>
+    </div>
+    <div id="panelsStayOpen-collapseOne" class="panel-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+            <div class="col-lg2">
+                <button type="button" class="agregar" routerLink="/nuevaexp" *ngIf="isLogged">
+                    AGREGAR <br>EXPERIENCIA
+                </button>
+                <div class="col-lg-10">
+                    <table class="table">
+                        <tbody><br>
+                            <tr *ngFor="let Experiencia of expe">
+                                <td>
+                                    <h3> {{Experiencia.nombreE}}</h3>
+                                </td>
+                                <td>
+                                    <p>{{Experiencia.descripcionE}}</p>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
+                                        <i class="bi bi-pencil-square"></i> EDITAR</button>
+                                </td>
+
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Todavia no tengo ninguna experiencia laboral</p>
+
+            </div>
+        </div>
+    </div>
+</div>
