@@ -21,8 +21,13 @@ ul {
 
 h1 {
     text-align: center;
+   
 }
-.info{
+h5 {
+    text-align: left;
+    margin-left: 100px;
+}
+.info{ 
     
 }
 
@@ -67,3 +72,4 @@ h1 {
   .agregar{
     justify-content: center;
   }
+ 
